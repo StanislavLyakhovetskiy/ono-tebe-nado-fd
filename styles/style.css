@@ -1,1 +1,389 @@
-/* место для вашего кода */
+/* первый блок сайта */
+.header {
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    margin-left: 51px;
+    margin-top: 92px;
+    margin-right: 49px;
+    align-items: center;
+  }
+  
+  /* контейнер навигации */
+  .header__menu {
+    justify-self: flex-start;
+    align-self: center;
+  }
+  
+  /* список ссылок */
+  .header__links-list {
+    color: #000;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  /* пункт списка ссылок */
+  .header__links-list-item {
+      display: flex;
+      /*display: grid; /* убрал по итогам совета от ревьюера */
+      /*grid-template-columns: 67px 149px 108px; /* убрал по итогам совета от ревьюера */
+      column-gap: 32px; /* увеличил на 7px, подгоняя в PixelPerfect под экран 1440 */
+      /*padding-left: 4px; /* оставил, подгоняя в PixelPerfect под экран 1440 */
+      /*padding-bottom: 1px; добавил, подгоняя в PixelPerfect под экран 1440 */
+      list-style: circle;
+  }
+  
+  /* класс, чтобы сделать ссылку без кружочка перед ней */
+  .header__links-list-item_no-bullit {
+      list-style: none;
+  }
+  
+  /* активная ссылка* */
+  .header__link-active {
+    text-decoration: none;
+  }
+  
+  /* контейнер логотипа */
+  .header__logo {
+    justify-self: center;
+    align-self: center;
+  }
+  
+  /* картинка с логотипом */
+  .header__logo-image {
+    width: 148px;
+    height: 105px;
+  }
+  
+  /* выравнивание блока с адресом */
+  .header__address {
+    justify-self: flex-end;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%;
+    max-width: 240px;
+  }
+  
+  /* второй блок сайта */
+  
+  /* вся секция */
+  .cover {
+    background-image: url(../images/cover.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 92px;
+    z-index: 0;
+  }
+  
+  /* полупрозрачный блок поверх секции */
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+  }
+  
+  /* заголовок */
+  .cover__title {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    color: #fff;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+    padding-top: 165px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  /* классы для выравнивания строк текста и превращения их в блочный элемент */
+  .aligned-text_left {
+    line-height: 115%;
+    justify-self: start;
+  }
+  
+  .aligned-text_center {
+    line-height: 100%;
+    justify-self: center;
+    margin-right: 60px;
+  }
+  
+  .aligned-text_right {
+    line-height: 100%;
+    justify-self: end;
+  }
+  
+  /* класс для управления межбуквенным расстоянием в местах, где есть эти акценты */
+  .letter-spacing-extended {
+    letter-spacing: 60px;
+  }
+  
+  /* класс для обнуления общего межбуквенного расстояния для последней буквы */
+  .no-letter-spacing {
+    letter-spacing: 0px;
+  }
+  
+  /* контейнер для подзаголовка и кнопки */
+  .cover__description {
+    display: flex;
+    gap: 107px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 135px;
+    padding-bottom: 50px;
+  }
+  
+  /* текст подзаголовка */
+  .cover__description-text {
+    word-spacing: 17px; /* увеличил на 2px, подгоняя в PixelPerfect под экран 1440 */
+    color: #fff;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    align-self: center;
+    line-height: 28px;
+  }
+  
+  /* кнопка «Сделать ставку» */
+  .bet-button {
+    color: #fff;
+    text-align: center;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    background-color: transparent;
+    padding-top: 12px;
+    padding-right: 32px; /* уменьшил на 4px, подгоняя в PixelPerfect под экран 1440 */
+    padding-bottom: 12px;
+    padding-left: 32px; /* уменьшил на 4px, подгоняя в PixelPerfect под экран 1440 */
+    cursor: pointer;
+  }
+  
+  /* третий блок сайта */
+  
+  .lots {
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 180px;
+  }
+  
+  /* заголовок секции */
+  .lots__heading {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 40px;
+  }
+  
+  /* список карточек */
+  .lots__card-list {
+    margin-top: 27px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+    gap: 25px;
+  }
+  
+  /* ссылка, обрамляющая карточку */
+  .card-link {
+    text-decoration: none;
+    min-height: 100%;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  
+  /* классы, чтобы задать определённый фон каждой из карточек */
+  .card_type_film {
+    background-size: cover;
+    background-image: url(../images/card-lot-01.jpg);
+    min-height: 450px;
+    position: relative;
+    z-index: 0;
+  }
+  
+  .card_type_book {
+    background-size: cover;
+    background-image: url(../images/card-lot-02.jpg);
+    min-height: 450px;
+    position: relative;
+    z-index: 0;
+  }
+  
+  .card_type_picture {
+    background-size: cover;
+    background-image: url(../images/card-lot-03.jpg);
+    min-height: 450px;
+    position: relative;
+    z-index: 0;
+  }
+  
+  /* заголовок карточки */
+  .card__title {
+    color: #fff;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+    text-decoration: underline;
+    flex-grow: 1;
+    padding-top: 50px;
+  }
+  
+  /* текст карточки */
+  .card__text {
+    color: #fff;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    padding-bottom: 50px;
+  }
+  
+  /* ссылка «Посмотреть больше» */
+  .lots__look-more-link {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-bottom: 2px;
+  }
+  
+  /* четвертый блок сайта */
+  .about {  
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 181px;
+    display: grid;
+    grid-template-columns: 430px 1fr;
+    gap: 25px;
+  }
+  
+  /* класс для колонки с логотипом */
+  .logo__column {
+    width: 430px;
+    height: 240px;
+  }
+  
+  /* контейнер с логотипом */
+  .about__logo {
+    width: 240px;
+    height: 240px;
+    background-color: #000;
+    border-radius: 120px;
+    margin-left: 95px;
+    margin-right: 95px;
+  }
+  
+  /* изображение логотипа */
+  .about__logo-image {
+    width: 148px;
+    height: 114px;
+    margin-top: 63px;
+    margin-right: 46px;
+    margin-bottom: 63px;
+    margin-left: 46px;
+  }
+  
+  /* класс для колонки со статьей */
+  .about__column {
+    margin-top: 100px;
+  }
+  
+  /* заголовок секции */
+  .about__title {
+    color: #000;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  /* блок для текстов секции */
+  .about__text {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 100px;
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 25px;
+  }
+  
+  /* пятый блок сайта */
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 50px;
+    margin-bottom: 90px;
+    margin-right: 50px;
+    margin-top: 186px; /* увеличил на 6px, подгоняя в PixelPerfect под экран 1440 */
+  }
+  
+  /* блок навигации по списку ссылок */
+  .footer__address {
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%;
+    display: flex;
+    flex-direction: column;
+    min-width: 240px;
+  }
+  
+  .footer__menu {
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  /* пункт списка меню */
+  .footer__menu-list-item {
+    list-style: none;
+  }
+  
+  /* активная ссылка меню (без подчеркивания) */
+  .footer__menu-link_active {
+    text-decoration: none;
+  }
+  
+  .footer__social-list {
+    display: flex;
+    gap: 48px;
+    justify-content: flex-end;
+  }
+  
+  /* конец стилей для сайта */
