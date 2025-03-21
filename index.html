@@ -16,7 +16,7 @@
     <!-- секция с заголовком сайта -->
     <header class="header">
       <!-- навигация по сайту -->
-      <div class="header__menu">
+      <!-- <div class="header__menu"> -->
         <nav class="header__links-list">
           <ul class="header__links-list-item">
             <li class="header__links-list-item_no-bullit">
@@ -30,7 +30,7 @@
             </li>
           </ul>
         </nav>
-      </div>
+      <!-- </div> -->
       <!-- картинка в заголовке -->
       <div class="header__logo">
         <a>
@@ -38,7 +38,7 @@
         </a>
       </div>
       <!-- адрес -->
-      <address class="header__address">
+      <address class="address">
         <a href="tel:+99995555555">+9 999 555 5555</a>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <p>наб. Принсенграхт 263-265, Амстердам</p>
@@ -50,17 +50,23 @@
       <section class="cover">
         <h1 class="cover__title">
             <span class="aligned-text_left">
-              О<span class="letter-spacing-extended">н</span><span class="no-letter-spacing">о</span>
+              <!-- <span class="letter-spacing-extended">н</span><span class="no-letter-spacing">о</span> -->
+              оно
             </span>
             <span class="aligned-text_center">
-              Те<span class="letter-spacing-extended">б</span><span class="no-letter-spacing">е</span>
+              <!-- Те<span class="letter-spacing-extended">б</span><span class="no-letter-spacing">е</span> -->
+              тебе
             </span>
             <span class="aligned-text_right">
-              <span class="letter-spacing-extended">н</span>ад<span class="no-letter-spacing">о</span>
+              <!-- <span class="letter-spacing-extended">н</span>ад<span class="no-letter-spacing">о</span> -->
+              надо
             </span>
         </h1>
         <div class="cover__description">
-              <p class="cover__description-text">Аукцион вещей, в которые никто не верил</p>
+              <p class="cover__description-text">Аукцион вещей, 
+                <span class="word-spacing-1">в которые никто</span>
+                <span class="word-spacing-2">не верил</span>
+              </p>
               <button class="bet-button" type="button">Сделать ставку</button>
         </div>
         <div class="overlay"></div>
@@ -97,9 +103,9 @@
                 <div class="overlay"></div>
           </li>
         </ul>
-        <div class="lots__look-more-link">
-          <a href="#more">посмотреть больше</a>
-        </div>
+        <!-- <div class="lots__look-more-link"> -->
+        <a href="#more" class="lots__look-more-link">посмотреть больше</a>
+        <!-- </div> -->
       </section>
       <!-- секция 3 "Об аукционе"-->
       <section class="about">
@@ -119,7 +125,7 @@
     </main>
     <!-- секция с подвалом сайта -->
     <footer class="footer">
-      <address class="footer__address">
+      <address class="address address__left">
         <a href="tel:+99995555555">+9 999 555 5555</a>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <p>наб. Принсенграхт 263-265, Амстердам</p>
@@ -128,7 +134,7 @@
         <nav class="footer__menu-list">
           <ul class="footer__menu-list-item">
             <li>
-              <a href="#main" class="footer__menu-link_active">главная</a>
+              <a href="#main" class="footer__menu-link footer__menu-link_active">главная</a>
             </li>
             <li> 
               <a href="#lots" class="footer__menu-link">посмотреть лоты</a>
@@ -139,7 +145,7 @@
           </ul>
         </nav>
       </div>
-      <div class="footer__social-list">
+      <ul class="footer__social-list">
         <a href="https://www.youtube.com/" class="footer__social-link" target="_blank">
             <img class="footer__social-icon" src="./images/yt.svg" width="48" height="48" alt="Социальная сеть Youtube">
         </a>
@@ -149,7 +155,7 @@
         <a href="https://ru.pinterest.com/" class="footer__social-link" target="_blank">
             <img class="footer__social-icon" src="./images/pinterest.svg" width="48" height="48" alt="Социальная сеть Pinterest">
         </a>
-      </div>
+      </ul>
     </footer>
   </body>
 </html>
