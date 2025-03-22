@@ -290,16 +290,14 @@
   .about {  
     margin-left: 24px;
     margin-right: 24px;
-    margin-top: 181px;
+    margin-top: 155px;
     display: grid;
-    grid-template-columns: 430px 1fr;
+    grid-template-columns: 333px 1fr;
     gap: 25px;
   }
   
   /* класс для колонки с логотипом */
   .logo__column {
-    width: 430px;
-    height: 240px;
   }
   
   /* контейнер с логотипом */
@@ -309,7 +307,6 @@
     background-color: #000;
     border-radius: 50%;
     margin-left: 48px;
-    margin-right: 95px;
   }
   
   /* изображение логотипа */
@@ -325,7 +322,6 @@
   /* класс для колонки со статьей */
   .about__column {
     margin-top: 100px;
-    margin-left: -95px;
   }
   
   /* заголовок секции */
@@ -343,10 +339,11 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    margin-top: 100px;
+    margin-top: 101px;
     display: grid;
     grid-template-rows: auto auto;
     gap: 25px;
+    padding-right: 4px;
   }
   
   /* пятый блок сайта */
